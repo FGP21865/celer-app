@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CELER</title>
+<meta name="apple-mobile-web-app-title" content="CELER">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#FF5E00">
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-512.png">
+<link rel="manifest" href="manifest.json">
+<style>
+  html,body{margin:0;height:100%;background:#FF5E00;color:#fff;font:16px/1.45 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+  main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 16px;box-sizing:border-box;text-align:center}
+  .logo svg{width:220px;height:auto}
+  p{max-width:320px;margin:20px 0 0;opacity:.95}
+  a.btn{display:inline-block;margin-top:24px;background:#fff;color:#FF5E00;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px}
+</style>
+</head>
+<body>
+<main>
+  <div class="logo"><svg role="img" aria-label="CELER" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 168"><path fill="#fff" fill-rule="evenodd" d="M123 160C119 156 113 147 113 141L112 137L84 137C53 136 51 136 47 130C41 122 47 88 57 78C64 71 67 71 98 70L126 70L127 67C130 62 137 53 144 48C147 46 150 43 150 43C150 42 64 44 57 45C29 52 14 72 7 109C3 135 6 148 19 155C30 162 40 163 89 163L126 163L123 160ZM222 162L243 162L247 150C248 144 250 139 250 138C250 138 237 138 214 138C174 138 172 138 167 133C162 128 162 123 166 107C171 85 175 77 186 72C193 68 215 68 222 72C228 75 230 79 230 85C229 93 229 93 214 93L200 93L190 101C184 106 178 110 177 112L174 114L178 114C180 115 198 115 219 115L256 115L257 109C258 105 260 99 261 94C270 58 253 43 204 44C175 45 162 49 149 62C137 73 130 90 126 118C122 144 134 158 161 162C169 163 193 163 222 162ZM409 162L438 162L440 152C442 146 443 141 444 140C444 138 444 138 409 138C369 138 367 138 361 133C356 127 357 118 365 93C370 75 379 69 399 69C419 69 426 75 423 90L423 93L409 93L394 93L382 103C369 113 369 114 372 114C374 115 392 115 413 115L450 114L453 106C467 59 453 43 398 44C351 45 332 61 322 105C316 136 322 153 342 159C355 163 362 163 409 162ZM299 150C301 144 304 133 306 124C308 115 312 100 315 89C318 78 322 60 325 50C332 22 336 6 336 5C335 5 329 9 304 23C300 26 295 29 294 29C294 30 291 38 289 48C286 57 282 74 279 84C274 104 272 113 264 144C262 152 260 159 259 160C259 162 260 162 278 162L296 162L299 150ZM494 148C496 140 500 127 502 118C512 81 513 80 524 75C530 72 531 72 544 71C551 71 558 71 558 70C559 69 565 46 565 44C565 43 562 43 549 43C514 45 494 52 482 68C478 74 473 88 465 118C463 126 459 140 457 147C455 155 453 161 453 161C453 162 461 162 471 162L490 162L494 148Z"/></svg></div>
+  <p id="msg">Para instalarla: pulsa <b>Compartir</b> y luego <b>Añadir a pantalla de inicio</b>.</p>
+  <a class="btn" href="https://script.google.com/macros/s/AKfycbwEiJn54V8QDPIw97cJEDe4lkQyZzVlC8g38bpBRnus2H_op5UfKTX_2Z2G-6GcmQf2kA/exec">Abrir la app</a>
+</main>
+<script>
+  // Abierta desde el icono de la pantalla de inicio: ir directa a la app.
+  if (window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches) {
+    document.getElementById('msg').textContent = 'Abriendo…';
+    location.replace('https://script.google.com/macros/s/AKfycbwEiJn54V8QDPIw97cJEDe4lkQyZzVlC8g38bpBRnus2H_op5UfKTX_2Z2G-6GcmQf2kA/exec');
+  }
+</script>
+</body>
+</html>

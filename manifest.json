@@ -1,0 +1,20 @@
+{
+ "name": "CELER",
+ "short_name": "CELER",
+ "start_url": "./",
+ "display": "standalone",
+ "background_color": "#FF5E00",
+ "theme_color": "#FF5E00",
+ "icons": [
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "apple-touch-icon.png",
+   "sizes": "180x180",
+   "type": "image/png"
+  }
+ ]
+}
